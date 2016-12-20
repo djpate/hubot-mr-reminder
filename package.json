@@ -2,7 +2,7 @@
   "name": "hubot-mr-reminder",
   "description": "Reminds people when MR are just waiting around.",
   "version": "0.1.0",
-  "author": "Christophe Verbinnen <christophe.verbinnen@gettyimages.com>",
+  "author": "Christophe Verbinnen <christophe@verbinnen.org>",
   "license": "MIT",
   "keywords": [
     "hubot",
