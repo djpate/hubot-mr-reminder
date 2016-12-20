@@ -1,6 +1,6 @@
 {
   "name": "hubot-mr-reminder",
-  "description": "Reminds people when MR are just waiting around.",
+  "description": "Reminds people when MR are just waiting around in Gitlab.",
   "version": "0.1.0",
   "author": "Christophe Verbinnen <christophe@verbinnen.org>",
   "license": "MIT",

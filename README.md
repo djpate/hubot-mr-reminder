@@ -16,9 +16,15 @@ Then add **hubot-mr-reminder** to your `external-scripts.json`:
 ["hubot-mr-reminder"]
 ```
 
-## Sample Interaction
+You'll need to set a couple of variables
 
 ```
-user1>> hubot hello
-hubot>> hello!
+HUBOT_GITLAB_URL
+HUBOT_GITLAB_TOKEN
 ```
+
+## Commands
+
+hubot start monitor for <repository> - Bot will start to monitor for MRs in the channel
+hubot stop monitor for <repository> - Bot will stop to monitor for MRs in the channel
+hubot list monitors - Bot will list all monitored repository for this channel
