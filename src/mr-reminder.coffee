@@ -55,7 +55,6 @@ module.exports = (robot) ->
 
   checkForMergeRequests = ->
     for repository, channels of _getMonitors()
-      console.log(repository)
       gitlab.projects.merge_requests.list repository,  {state: 'opened'}, (mrs)->
         for mr in mrs
           if _shouldNotify(mr)
@@ -91,9 +90,5 @@ module.exports = (robot) ->
       msg.reply "Ok, I'm now tracking MRs for #{repository} in ##{room}!"
 
   #setup cron
-  try
-    cronJob = require('cron').CronJob
-    console.log(new Date().toString());
-    new cronJob('0 0 9-17 * * 1-5', checkForMergeRequests,null, true, 'America/Los_Angeles')
-  catch ex
-    console.log(ex)
+  cronJob = require('cron').CronJob
+  new cronJob('0 0 9-17 * * 1-5', checkForMergeRequests,null, true, 'America/Los_Angeles')
