@@ -17,9 +17,10 @@
   },
   "dependencies": {
     "coffee-script": "~1.6",
-    "cron": "^1.1.1",
+    "cron": "^1.2.1",
     "gitlab": "^1.7.1",
     "hubot-env": "0.0.2",
+    "node-cron": "^1.1.2",
     "time": "^0.11.4"
   },
   "devDependencies": {

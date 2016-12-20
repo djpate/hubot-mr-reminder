@@ -9,7 +9,6 @@
 #   hubot start monitor for <repository> - Bot will start to monitor for MRs in the channel
 #   hubot stop monitor for <repository> - Bot will stop to monitor for MRs in the channel
 #   hubot list monitors - Bot will list all monitored repository for this channel
-#   orly - <what the hear trigger does>
 #
 # Notes:
 #   <optional notes required for the script>
@@ -94,6 +93,7 @@ module.exports = (robot) ->
   #setup cron
   try
     cronJob = require('cron').CronJob
-    new cronJob('00 14 9-5 * * 1-5', checkForMergeRequests,null, true, 'America/Los_Angeles')
+    console.log(new Date().toString());
+    new cronJob('0 0 9-17 * * 1-5', checkForMergeRequests,null, true, 'America/Los_Angeles')
   catch ex
     console.log(ex)

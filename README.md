@@ -25,6 +25,14 @@ HUBOT_GITLAB_TOKEN
 
 ## Commands
 
+```
 hubot start monitor for <repository> - Bot will start to monitor for MRs in the channel
+```
+
+```
 hubot stop monitor for <repository> - Bot will stop to monitor for MRs in the channel
+```
+
+```
 hubot list monitors - Bot will list all monitored repository for this channel
+```
